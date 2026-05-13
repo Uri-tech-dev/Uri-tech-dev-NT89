@@ -1,0 +1,37 @@
+{
+  "motion_level": 2,
+  "visual_direction": "minimal-golden-b2b",
+  "packages": [
+    "framer-motion",
+    "lucide-react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "shadcn_components": [
+    "button",
+    "card",
+    "input",
+    "badge",
+    "separator",
+    "skeleton"
+  ],
+  "custom_components": [
+    "ProductCard",
+    "ProductListItem",
+    "CategoryCard",
+    "OrderCard",
+    "CartItem",
+    "LoyaltyCard",
+    "StatsBar",
+    "QuickAction"
+  ],
+  "animation_config": {
+    "core_library": "framer-motion",
+    "scroll_library": null,
+    "text_animation": null,
+    "page_transition": "framer",
+    "ambient_system": "css",
+    "micro_interactions": "framer-motion",
+    "gsap_plugins": []
+  }
+}

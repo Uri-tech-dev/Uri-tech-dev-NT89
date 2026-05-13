@@ -1,0 +1,522 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "Q3IP1X",
+      "x": 0,
+      "y": 2600,
+      "name": "Desktop Product Detail",
+      "width": 1280,
+      "height": 900,
+      "fill": "#FFFFFF",
+      "children": [
+        {
+          "type": "frame",
+          "id": "YxkMe",
+          "name": "deskProdLeft",
+          "width": 500,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "HdENo",
+              "name": "deskProdMainImg",
+              "width": "fill_container",
+              "height": 400,
+              "fill": "#F3F4F6",
+              "cornerRadius": 12
+            },
+            {
+              "type": "frame",
+              "id": "FqZbt",
+              "name": "deskProdThumbs",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "p8Xss5",
+                  "name": "deskThumb1",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#F3F4F6",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "t44B7v",
+                  "name": "deskThumb2",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#F3F4F6",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "QfBw3",
+                  "name": "deskThumb3",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#F3F4F6",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "HPrt5",
+                  "name": "deskThumb4",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#F3F4F6",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ttPCh",
+          "name": "deskProdRight",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "uDXNA",
+              "name": "deskBreadcrumb",
+              "width": "fill_container",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wUFi6",
+                  "name": "deskBreadcrumbHome",
+                  "fill": "#9CA3AF",
+                  "content": "Нүүр",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EtkUU",
+                  "name": "deskBreadcrumbSep1",
+                  "fill": "#9CA3AF",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cAKoK",
+                  "name": "deskBreadcrumbCat",
+                  "fill": "#9CA3AF",
+                  "content": "Гурил",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "PxAUf",
+                  "name": "deskBreadcrumbSep2",
+                  "fill": "#9CA3AF",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "pjlEn",
+                  "name": "deskBreadcrumbProd",
+                  "fill": "#111827",
+                  "content": "Гурил №1",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "C4Mcj1",
+              "name": "deskProdName",
+              "fill": "#111827",
+              "content": "Гурил №1 - 25кг",
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "T7ZUe",
+              "name": "deskProdRating",
+              "width": "fill_container",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FpFZD",
+                  "name": "deskProdStars",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Pf9O7",
+                      "name": "deskStar1",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FBBF24"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "MMrsA",
+                      "name": "deskStar2",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FBBF24"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "cGIcZ",
+                      "name": "deskStar3",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FBBF24"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "F2gXJ",
+                      "name": "deskStar4",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FBBF24"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "A9kiU",
+                      "name": "deskStar5",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#D1D5DB"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "VVNoK",
+                  "name": "deskProdRatingText",
+                  "fill": "#6B7280",
+                  "content": "4.7 (10 сэтгэгдэл)",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P2hUbZ",
+              "name": "deskProdPriceRow",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QcSYO",
+                  "name": "deskProdPriceCurrent",
+                  "fill": "#B8860B",
+                  "content": "₮45,000",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "U3LnB",
+                  "name": "deskProdPriceOriginal",
+                  "fill": "#9CA3AF",
+                  "content": "₮52,000",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "AOKX0",
+                  "name": "deskProdDiscount",
+                  "height": 28,
+                  "fill": "#DC2626",
+                  "cornerRadius": 4,
+                  "gap": 4,
+                  "padding": [
+                    8,
+                    6
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TAQj1",
+                      "name": "deskProdDiscountText",
+                      "fill": "#FFFFFF",
+                      "content": "15% хямдрал",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ed3hT",
+              "name": "deskProdDetails",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YjttT",
+                  "name": "deskProdDetail1",
+                  "fill": "#6B7280",
+                  "content": "• 25 кг",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "gc7Mw",
+                  "name": "deskProdDetail2",
+                  "fill": "#6B7280",
+                  "content": "• Өндөр чанарын улаанбуудай",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "hnMKK",
+                  "name": "deskProdDetail3",
+                  "fill": "#B8860B",
+                  "content": "• Нийлүүлэгч: Нарантуул Трейд",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Bpi14",
+              "name": "deskProdQty",
+              "width": "fill_container",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "n6AB05",
+                  "name": "deskProdQtyLabel",
+                  "fill": "#111827",
+                  "content": "Тонн:",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "m13lzl",
+                  "name": "deskProdQtySelector",
+                  "width": 120,
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "gap": 8,
+                  "padding": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JCiGC",
+                      "name": "deskProdQtyValue",
+                      "fill": "#111827",
+                      "content": "1",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "FSub3",
+                      "name": "deskProdQtyArrow",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#6B7280"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bIp4i",
+              "name": "deskProdAddBtn",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#B8860B",
+              "cornerRadius": 26,
+              "gap": 8,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CqR3K",
+                  "name": "deskProdAddBtnText",
+                  "fill": "#FFFFFF",
+                  "content": "Сагсанд нэмэх",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LBDTY",
+              "name": "deskProdSaveRow",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qG03S",
+                  "name": "deskProdSave",
+                  "fill": "#F9FAFB",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "g8GUnW",
+                      "name": "deskProdSaveIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "#6B7280"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vSyDZ",
+                      "name": "deskProdSaveText",
+                      "fill": "#6B7280",
+                      "content": "Хадгалах",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "X6Eevj",
+                  "name": "deskProdShare",
+                  "fill": "#F9FAFB",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "KOCfM",
+                      "name": "deskProdShareIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "share-2",
+                      "iconFontFamily": "lucide",
+                      "fill": "#6B7280"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zJE0L",
+                      "name": "deskProdShareText",
+                      "fill": "#6B7280",
+                      "content": "Хуваалцах",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

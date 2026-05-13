@@ -1,0 +1,1992 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "xIl43",
+      "x": 0,
+      "y": 0,
+      "name": "Option A — Swiss Precision",
+      "width": 375,
+      "height": 1200,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "PsCHA",
+          "name": "headerA",
+          "width": "fill_container",
+          "height": 56,
+          "gap": 12,
+          "padding": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "WCf1q",
+              "name": "logoA",
+              "fill": "#1B4332",
+              "content": "НАРАНТУУЛ",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "K8pTj5",
+              "name": "spacerA1",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "icon_font",
+              "id": "d6fPwy",
+              "name": "searchIconA",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "search",
+              "iconFontFamily": "lucide",
+              "fill": "#8B6914"
+            },
+            {
+              "type": "icon_font",
+              "id": "Ry9Jb",
+              "name": "cartIconA",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "shopping-cart",
+              "iconFontFamily": "lucide",
+              "fill": "#8B6914"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "j7ogF",
+          "name": "heroA",
+          "width": "fill_container",
+          "fill": "#FFFAF0",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Phpar",
+              "name": "heroTitleA",
+              "fill": "#1B4332",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Хүнсний бараа захиалах",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "A997bR",
+              "name": "heroSubtitleA",
+              "fill": "#52796F",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Хөдөө орон нутгийн дэлгүүрүүдэд шуурхай хүргэлт",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "nzFw0",
+              "name": "heroCTAA",
+              "height": 48,
+              "fill": "#8B6914",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                24,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "A2Fhl",
+                  "name": "heroCTATextA",
+                  "fill": "#FFFFFF",
+                  "content": "Бараа хайх",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "L28pqw",
+          "name": "statsA",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "kVAEt",
+              "name": "stat1A",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                16,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UFII3",
+                  "name": "stat1NumA",
+                  "fill": "#1B4332",
+                  "content": "2,500+",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "zICRq",
+                  "name": "stat1LabelA",
+                  "fill": "#52796F",
+                  "content": "Бараа",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b3k4I",
+              "name": "stat2A",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                16,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iIowt",
+                  "name": "stat2NumA",
+                  "fill": "#1B4332",
+                  "content": "150+",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "t4eYd0",
+                  "name": "stat2LabelA",
+                  "fill": "#52796F",
+                  "content": "Нийлүүлэгч",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OxyOO",
+              "name": "stat3A",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                16,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pZKMy",
+                  "name": "stat3NumA",
+                  "fill": "#1B4332",
+                  "content": "48ц",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "sFL2U",
+                  "name": "stat3LabelA",
+                  "fill": "#52796F",
+                  "content": "Хүргэлт",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DveNS",
+          "name": "catTitleWrapperA",
+          "width": "fill_container",
+          "padding": [
+            16,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "J7RCfE",
+              "name": "catTitleA",
+              "fill": "#1B4332",
+              "content": "Ангилал",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cSpAQ",
+          "name": "categoriesA",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "gsTQU",
+              "name": "cat1A",
+              "width": 80,
+              "height": 80,
+              "fill": "#FFFAF0",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                12,
+                8
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "iNd0Z",
+                  "name": "cat1IconA",
+                  "width": 28,
+                  "height": 28,
+                  "iconFontName": "apple",
+                  "iconFontFamily": "lucide",
+                  "fill": "#8B6914"
+                },
+                {
+                  "type": "text",
+                  "id": "So0Kp",
+                  "name": "cat1TextA",
+                  "fill": "#1B4332",
+                  "content": "Жимс",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Y650Ei",
+              "name": "cat2A",
+              "width": 80,
+              "height": 80,
+              "fill": "#FFFAF0",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                12,
+                8
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "ap9Yy",
+                  "name": "cat2IconA",
+                  "width": 28,
+                  "height": 28,
+                  "iconFontName": "milk",
+                  "iconFontFamily": "lucide",
+                  "fill": "#8B6914"
+                },
+                {
+                  "type": "text",
+                  "id": "usjrB",
+                  "name": "cat2TextA",
+                  "fill": "#1B4332",
+                  "content": "Сүү",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TNt1T",
+              "name": "cat3A",
+              "width": 80,
+              "height": 80,
+              "fill": "#FFFAF0",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                12,
+                8
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "HV5bQ",
+                  "name": "cat3IconA",
+                  "width": 28,
+                  "height": 28,
+                  "iconFontName": "wheat",
+                  "iconFontFamily": "lucide",
+                  "fill": "#8B6914"
+                },
+                {
+                  "type": "text",
+                  "id": "idpaL",
+                  "name": "cat3TextA",
+                  "fill": "#1B4332",
+                  "content": "Гурил",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Pb3yv",
+              "name": "cat4A",
+              "width": 80,
+              "height": 80,
+              "fill": "#FFFAF0",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                12,
+                8
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "FXkxZ",
+                  "name": "cat4IconA",
+                  "width": 28,
+                  "height": 28,
+                  "iconFontName": "beef",
+                  "iconFontFamily": "lucide",
+                  "fill": "#8B6914"
+                },
+                {
+                  "type": "text",
+                  "id": "bdXQY",
+                  "name": "cat4TextA",
+                  "fill": "#1B4332",
+                  "content": "Мах",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KpKZo",
+          "name": "prodTitleWrapperA",
+          "width": "fill_container",
+          "padding": [
+            16,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "QfNj9",
+              "name": "prodTitleA",
+              "fill": "#1B4332",
+              "content": "Онцлох бараа",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lIWj9",
+          "name": "productsA",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "f6jl4",
+              "name": "prod1A",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WSEXV",
+                  "name": "prod1ImgA",
+                  "width": "fill_container",
+                  "height": 120,
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "YPRcB",
+                  "name": "prod1NameA",
+                  "fill": "#1B4332",
+                  "content": "Алим",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Ulron",
+                  "name": "prod1PriceA",
+                  "fill": "#1B4332",
+                  "content": "₮12,500/кг",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "VcXvw",
+                  "name": "prod1StockA",
+                  "fill": "#059669",
+                  "content": "✓ Боломжтой",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z1YVGg",
+              "name": "prod2A",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rCbSH",
+                  "name": "prod2ImgA",
+                  "width": "fill_container",
+                  "height": 120,
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "vKr66",
+                  "name": "prod2NameA",
+                  "fill": "#1B4332",
+                  "content": "Сүү",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "yEAa4",
+                  "name": "prod2PriceA",
+                  "fill": "#1B4332",
+                  "content": "₮8,900/л",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "c9gwox",
+                  "name": "prod2StockA",
+                  "fill": "#059669",
+                  "content": "✓ Боломжтой",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GPiwD",
+          "name": "trackingA",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "#8B6914",
+          "gap": 12,
+          "padding": 16,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "cch9N",
+              "name": "trackingTextA",
+              "fill": "#FFFFFF",
+              "content": "Захиалга хянах →",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DINJz",
+          "name": "footerA",
+          "width": "fill_container",
+          "fill": "#F8FAFC",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "T33jR",
+              "name": "footerTextA",
+              "fill": "#52796F",
+              "content": "© 2025 Нарантуул Маркет",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "axrtr",
+      "x": 400,
+      "y": 0,
+      "name": "Option B — Data Dense",
+      "width": 375,
+      "height": 1200,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "P2ZMJJ",
+          "name": "headerB",
+          "width": "fill_container",
+          "height": 56,
+          "gap": 12,
+          "padding": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "b1YGE",
+              "name": "logoB",
+              "fill": "#0F172A",
+              "content": "НАРАНТУУЛ",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "NJs0j",
+              "name": "spacerB1",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "icon_font",
+              "id": "eE13L",
+              "name": "searchIconB",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "search",
+              "iconFontFamily": "lucide",
+              "fill": "#0F172A"
+            },
+            {
+              "type": "icon_font",
+              "id": "H1EHjY",
+              "name": "cartIconB",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "shopping-cart",
+              "iconFontFamily": "lucide",
+              "fill": "#0F172A"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Y6BWin",
+          "name": "heroB",
+          "width": "fill_container",
+          "fill": "#0F172A",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "A4N5c",
+              "name": "heroTitleB",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Таны бизнесийн хөдөө",
+              "fontFamily": "Inter",
+              "fontSize": 26,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "l1hklH",
+              "name": "heroDataB",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "S0WgP",
+                  "name": "heroData1B",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Dl9wN",
+                      "name": "heroData1NumB",
+                      "fill": "#4ADE80",
+                      "content": "2,500+",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RN3u8",
+                      "name": "heroData1LabelB",
+                      "fill": "#94A3B8",
+                      "content": "Бараа",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KoqSy",
+                  "name": "heroData2B",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Dra25",
+                      "name": "heroData2NumB",
+                      "fill": "#4ADE80",
+                      "content": "48ц",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uVJqX",
+                      "name": "heroData2LabelB",
+                      "fill": "#94A3B8",
+                      "content": "Хүргэлт",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KTN6f",
+                  "name": "heroData3B",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jdm3y",
+                      "name": "heroData3NumB",
+                      "fill": "#4ADE80",
+                      "content": "150+",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "igPly",
+                      "name": "heroData3LabelB",
+                      "fill": "#94A3B8",
+                      "content": "Нийлүүлэгч",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yLxyn",
+          "name": "quickActionsB",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "M9o54D",
+              "name": "action1B",
+              "width": "fill_container",
+              "fill": "#F1F5F9",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                16,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "jpoWd",
+                  "name": "action1IconB",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "package",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F172A"
+                },
+                {
+                  "type": "text",
+                  "id": "K9VOdP",
+                  "name": "action1TextB",
+                  "fill": "#0F172A",
+                  "content": "Миний захиалга",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WPERj",
+              "name": "action2B",
+              "width": "fill_container",
+              "fill": "#F1F5F9",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                16,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "SYcUt",
+                  "name": "action2IconB",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "heart",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F172A"
+                },
+                {
+                  "type": "text",
+                  "id": "Eh4iH",
+                  "name": "action2TextB",
+                  "fill": "#0F172A",
+                  "content": "Давтамжтай",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uRQAd",
+              "name": "action3B",
+              "width": "fill_container",
+              "fill": "#F1F5F9",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                16,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "kZMqD",
+                  "name": "action3IconB",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "truck",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F172A"
+                },
+                {
+                  "type": "text",
+                  "id": "PUY0i",
+                  "name": "action3TextB",
+                  "fill": "#0F172A",
+                  "content": "Хүргэлт хянах",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "J3yZfR",
+          "name": "catTitleWrapperB",
+          "width": "fill_container",
+          "padding": [
+            16,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "e0XPak",
+              "name": "catTitleB",
+              "fill": "#0F172A",
+              "content": "Ангилал",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ycBHf",
+          "name": "categoriesGridB",
+          "width": "fill_container",
+          "gap": 8,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "i3gut",
+              "name": "catCol1B",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JykYm",
+                  "name": "catItem1B",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 8,
+                  "gap": 12,
+                  "padding": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "T75Pe1",
+                      "name": "catItem1IconB",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "apple",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F172A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "plDSl",
+                      "name": "catItem1TextB",
+                      "fill": "#0F172A",
+                      "content": "Жимс",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RUNwx",
+                      "name": "catItem1CountB",
+                      "fill": "#64748B",
+                      "content": "324",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XuniD",
+                  "name": "catItem2B",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 8,
+                  "gap": 12,
+                  "padding": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "nJRW2",
+                      "name": "catItem2IconB",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "milk",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F172A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TwQW4",
+                      "name": "catItem2TextB",
+                      "fill": "#0F172A",
+                      "content": "Сүү",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "U16Di",
+                      "name": "catItem2CountB",
+                      "fill": "#64748B",
+                      "content": "156",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zkamK",
+              "name": "catCol2B",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Byxai",
+                  "name": "catItem3B",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 8,
+                  "gap": 12,
+                  "padding": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "A0fE4",
+                      "name": "catItem3IconB",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "wheat",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F172A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XraBm",
+                      "name": "catItem3TextB",
+                      "fill": "#0F172A",
+                      "content": "Гурил",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RJAzG",
+                      "name": "catItem3CountB",
+                      "fill": "#64748B",
+                      "content": "89",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Xhr1q",
+                  "name": "catItem4B",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 8,
+                  "gap": 12,
+                  "padding": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "g7TsA",
+                      "name": "catItem4IconB",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "beef",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F172A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yMwCl",
+                      "name": "catItem4TextB",
+                      "fill": "#0F172A",
+                      "content": "Мах",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JfLTF",
+                      "name": "catItem4CountB",
+                      "fill": "#64748B",
+                      "content": "203",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I0NaEW",
+          "name": "prodTitleWrapperB",
+          "width": "fill_container",
+          "padding": [
+            16,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "RucH3",
+              "name": "prodTitleB",
+              "fill": "#0F172A",
+              "content": "Онцлох бараа",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xQu9b",
+          "name": "prodListB",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "nGfca",
+              "name": "prod1B",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "gap": 12,
+              "padding": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tg8Er",
+                  "name": "prod1ImgB",
+                  "width": 80,
+                  "height": 80,
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "SC0fy",
+                  "name": "prod1InfoB",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K5iSJR",
+                      "name": "prod1NameB",
+                      "fill": "#0F172A",
+                      "content": "Алим",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "acCqE",
+                      "name": "prod1PriceB",
+                      "fill": "#0F172A",
+                      "content": "₮12,500/кг",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vS41k",
+                      "name": "prod1StockB",
+                      "fill": "#059669",
+                      "content": "✓ 1,240 кг үлдэгдэлтэй",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rzop2",
+              "name": "prod2B",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "gap": 12,
+              "padding": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "khu1n",
+                  "name": "prod2ImgB",
+                  "width": 80,
+                  "height": 80,
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "s2Qxcr",
+                  "name": "prod2InfoB",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FT91e",
+                      "name": "prod2NameB",
+                      "fill": "#0F172A",
+                      "content": "Сүү",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UO6yP",
+                      "name": "prod2PriceB",
+                      "fill": "#0F172A",
+                      "content": "₮8,900/л",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "skQ3k",
+                      "name": "prod2StockB",
+                      "fill": "#059669",
+                      "content": "✓ 850 л үлдэгдэлтэй",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aCWUR",
+          "name": "footerB",
+          "width": "fill_container",
+          "fill": "#F1F5F9",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "MchMi",
+              "name": "footerTextB",
+              "fill": "#64748B",
+              "content": "© 2025 Нарантуул Маркет",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Yc9Wx",
+      "x": 800,
+      "y": 0,
+      "name": "Option C — Balanced",
+      "width": 375,
+      "height": 1200,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "SnoEL",
+          "name": "headerC",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "#FFFFFF",
+          "gap": 12,
+          "padding": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "aEcHw",
+              "name": "logoC",
+              "fill": "#166534",
+              "content": "НАРАНТУУЛ",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "jlKeP",
+              "name": "spacerC1",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "icon_font",
+              "id": "BCHow",
+              "name": "searchIconC",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "search",
+              "iconFontFamily": "lucide",
+              "fill": "#B8860B"
+            },
+            {
+              "type": "icon_font",
+              "id": "MHk2D",
+              "name": "cartIconC",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "shopping-cart",
+              "iconFontFamily": "lucide",
+              "fill": "#B8860B"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "f0icnQ",
+          "name": "heroC",
+          "width": "fill_container",
+          "fill": "#FFF8DC",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            32,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "TbdNP",
+              "name": "heroTitleC",
+              "fill": "#166534",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Хүнсний бараа\nшуурхай захиал",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "M1Sqe",
+              "name": "heroSubtitleC",
+              "fill": "#15803D",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Хөдөө орон нутаг руу 48 цагт хүргэнэ",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Tzl3B",
+              "name": "heroCTAC",
+              "height": 52,
+              "fill": "#B8860B",
+              "cornerRadius": 12,
+              "gap": 8,
+              "padding": [
+                28,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QLLWy",
+                  "name": "heroCTATextC",
+                  "fill": "#FFFFFF",
+                  "content": "Бараа хайх →",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rkvkK",
+          "name": "statsBarC",
+          "width": "fill_container",
+          "fill": "#FFFAF0",
+          "gap": 16,
+          "padding": [
+            20,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "VObk8",
+              "name": "statBar1C",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JDrxm",
+                  "name": "statBar1NumC",
+                  "fill": "#166534",
+                  "content": "2,500+",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Jsdhn",
+                  "name": "statBar1LabelC",
+                  "fill": "#15803D",
+                  "content": "Бараа",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ozlqj",
+              "name": "statBar2C",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dDTzo",
+                  "name": "statBar2NumC",
+                  "fill": "#166534",
+                  "content": "150+",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "o8GYlM",
+                  "name": "statBar2LabelC",
+                  "fill": "#15803D",
+                  "content": "Нийлүүлэгч",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "U9XyQr",
+              "name": "statBar3C",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aUyJf",
+                  "name": "statBar3NumC",
+                  "fill": "#166534",
+                  "content": "48ц",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "XTGle",
+                  "name": "statBar3LabelC",
+                  "fill": "#15803D",
+                  "content": "Хүргэлт",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m0Keb",
+          "name": "catTitleWrapperC",
+          "width": "fill_container",
+          "padding": [
+            20,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "N0Sv9",
+              "name": "catTitleC",
+              "fill": "#166534",
+              "content": "Ангилал",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e0Q9O",
+          "name": "categoriesC",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "ppuxr",
+              "name": "cat1C",
+              "width": 80,
+              "height": 90,
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#BBF7D0"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                14,
+                10
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "a05M2n",
+                  "name": "cat1IconC",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "apple",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B8860B"
+                },
+                {
+                  "type": "text",
+                  "id": "A7m0a",
+                  "name": "cat1TextC",
+                  "fill": "#166534",
+                  "content": "Жимс",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VOd15",
+              "name": "cat2C",
+              "width": 80,
+              "height": 90,
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#BBF7D0"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                14,
+                10
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "dMsBf",
+                  "name": "cat2IconC",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "milk",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B8860B"
+                },
+                {
+                  "type": "text",
+                  "id": "Id5da",
+                  "name": "cat2TextC",
+                  "fill": "#166534",
+                  "content": "Сүү",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LQTki",
+              "name": "cat3C",
+              "width": 80,
+              "height": 90,
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#BBF7D0"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                14,
+                10
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "o3qlnG",
+                  "name": "cat3IconC",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "wheat",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B8860B"
+                },
+                {
+                  "type": "text",
+                  "id": "WIOel",
+                  "name": "cat3TextC",
+                  "fill": "#166534",
+                  "content": "Гурил",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X7jng",
+              "name": "cat4C",
+              "width": 80,
+              "height": 90,
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#BBF7D0"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                14,
+                10
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "mpD2Y",
+                  "name": "cat4IconC",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "beef",
+                  "iconFontFamily": "lucide",
+                  "fill": "#B8860B"
+                },
+                {
+                  "type": "text",
+                  "id": "pmURZ",
+                  "name": "cat4TextC",
+                  "fill": "#166534",
+                  "content": "Мах",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uSFAX",
+          "name": "prodTitleWrapperC",
+          "width": "fill_container",
+          "padding": [
+            20,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "G4sHPX",
+              "name": "prodTitleC",
+              "fill": "#166534",
+              "content": "Онцлох бараа",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BwiS9",
+          "name": "productsC",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "wOdrI",
+              "name": "prod1C",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#DCFCE7"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UrAag",
+                  "name": "prod1ImgC",
+                  "width": "fill_container",
+                  "height": 130,
+                  "fill": "#FFFAF0",
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "text",
+                  "id": "Isb2M",
+                  "name": "prod1NameC",
+                  "fill": "#166534",
+                  "content": "Алим",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "S8EIwO",
+                  "name": "prod1PriceC",
+                  "fill": "#166534",
+                  "content": "₮12,500/кг",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "domKu",
+                  "name": "prod1StockC",
+                  "fill": "#16A34A",
+                  "content": "✓ Боломжтой",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yO2Zb",
+              "name": "prod2C",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#DCFCE7"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Bvo96",
+                  "name": "prod2ImgC",
+                  "width": "fill_container",
+                  "height": 130,
+                  "fill": "#FFFAF0",
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "text",
+                  "id": "kJ6pv",
+                  "name": "prod2NameC",
+                  "fill": "#166534",
+                  "content": "Сүү",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "QBwXD",
+                  "name": "prod2PriceC",
+                  "fill": "#166534",
+                  "content": "₮8,900/л",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "tkIaN",
+                  "name": "prod2StockC",
+                  "fill": "#16A34A",
+                  "content": "✓ Боломжтой",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T19ySq",
+          "name": "ctaBannerC",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "#B8860B",
+          "gap": 12,
+          "padding": [
+            24,
+            16
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "tJ1Lv",
+              "name": "ctaTextC",
+              "fill": "#FFFFFF",
+              "content": "Захиалга хянах →",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LrNUV",
+          "name": "footerC",
+          "width": "fill_container",
+          "fill": "#FFFAF0",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "WbYH5",
+              "name": "footerTextC",
+              "fill": "#15803D",
+              "content": "© 2025 Нарантуул Маркет",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

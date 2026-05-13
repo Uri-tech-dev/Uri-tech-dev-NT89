@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "siteName": "narantuul-market",
+    "visualDirection": "minimal-golden-b2b",
+    "motionLevel": 2,
+    "defaultLocale": "mn",
+    "locales": ["mn", "en"]
+  },
+  "colors": {
+    "brand": {
+      "primary": "#B8860B",
+      "primaryDark": "#8B6914",
+      "primaryLight": "#FEF3C7",
+      "accent": "#DAA520"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "cream": "#FFFAF0",
+      "lightGray": "#F9FAFB",
+      "gray": "#E5E7EB",
+      "mediumGray": "#9CA3AF",
+      "darkGray": "#6B7280",
+      "black": "#111827"
+    },
+    "semantic": {
+      "background": "#FFFFFF",
+      "foreground": "#111827",
+      "card": "#FFFFFF",
+      "cardForeground": "#111827",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#111827",
+      "primary": "#B8860B",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#F9FAFB",
+      "secondaryForeground": "#111827",
+      "muted": "#F9FAFB",
+      "mutedForeground": "#6B7280",
+      "accent": "#FEF3C7",
+      "accentForeground": "#92400E",
+      "border": "#E5E7EB",
+      "input": "#F9FAFB",
+      "ring": "#B8860B",
+      "success": "#059669",
+      "warning": "#D97706",
+      "destructive": "#DC2626"
+    }
+  },
+  "typography": {
+    "families": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "scale": {
+      "xs": 12,
+      "sm": 14,
+      "base": 16,
+      "lg": 18,
+      "xl": 20,
+      "2xl": 24,
+      "3xl": 28,
+      "4xl": 32
+    }
+  },
+  "spacing": {
+    "scale": {
+      "xs": 4,
+      "sm": 8,
+      "md": 12,
+      "lg": 16,
+      "xl": 20,
+      "2xl": 24,
+      "3xl": 32
+    },
+    "layout": {
+      "page": 16,
+      "section": 24,
+      "component": 12
+    }
+  },
+  "radius": {
+    "sm": 8,
+    "md": 10,
+    "lg": 12,
+    "xl": 16,
+    "full": 9999
+  },
+  "shadows": {
+    "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+    "md": "0 4px 6px -1px rgb(0 0 0 / 0.1)",
+    "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1)"
+  },
+  "motion": {
+    "duration": {
+      "fast": 150,
+      "normal": 200,
+      "slow": 300
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)"
+    }
+  }
+}

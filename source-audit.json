@@ -1,0 +1,42 @@
+{
+  "site": "www.instacart.com",
+  "start_url": "https://www.instacart.com/",
+  "audited_at": "2026-05-13T10:46:30.525Z",
+  "locales": [
+    "en-us"
+  ],
+  "audited_pages": [
+    {
+      "url": "https://www.instacart.com",
+      "pathname": "/",
+      "title": null,
+      "description": null,
+      "locale": null,
+      "html_lang": "en-US",
+      "headings": [],
+      "cta_labels": [],
+      "text_blocks": [],
+      "links": [],
+      "contact": {
+        "emails": [
+          "half-carrot@3x-23fee52edc148279c7534cfa295cf5b66b0784f7383e31d067665b9f271f2732.png",
+          "Icon-60@3x-73f80604373da67ef3fadbc54f4548b1.png",
+          "17a73cbe32d1421bb73bc112f010623e@o502263.ingest.sentry.io"
+        ],
+        "phones": [
+          "80604373",
+          "5588299",
+          "1592503",
+          "7974997",
+          "2253956",
+          "774228920",
+          "95-3215-459",
+          "2195191"
+        ]
+      },
+      "source": "seed"
+    }
+  ],
+  "discovered_pages": [],
+  "skipped_pages": []
+}

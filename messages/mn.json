@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "title": "Нарантуул Маркет",
+    "description": "Хүнсний бөөний худалдаа - Хөдөө орон нутаг руу 48 цагт хүргэнэ"
+  },
+  "common": {
+    "loading": "Ачаалж байна...",
+    "error": "Алдаа гарлаа",
+    "save": "Хадгалах",
+    "cancel": "Болих",
+    "delete": "Устгах",
+    "edit": "Засах",
+    "add": "Нэмэх",
+    "close": "Хаах",
+    "back": "Буцах",
+    "next": "Дараах",
+    "submit": "Илгээх",
+    "confirm": "Баталгаажуулах",
+    "search": "Хайх",
+    "viewAll": "Бүгдийг харах",
+    "noData": "Мэдээлэл байхгүй байна",
+    "success": "Амжилттай",
+    "failed": "Амжилтгүй"
+  },
+  "auth": {
+    "login": "Нэвтрэх",
+    "logout": "Гарах",
+    "register": "Бүртгүүлэх",
+    "email": "И-мэйл",
+    "password": "Нууц үг",
+    "firstName": "Нэр",
+    "lastName": "Овог",
+    "phone": "Утасны дугаар",
+    "forgotPassword": "Нууц үгээ мартсан уу?",
+    "resetPassword": "Нууц үг сэргээх",
+    "changePassword": "Нууц үг солих",
+    "currentPassword": "Одоогийн нууц үг",
+    "newPassword": "Шинэ нууц үг",
+    "confirmPassword": "Нууц үг давтах",
+    "loginSuccess": "Амжилттай нэвтэрлээ",
+    "logoutSuccess": "Амжилттай гарлаа",
+    "registerSuccess": "Амжилттай бүртгэгдлээ",
+    "noAccount": "Бүртгэл байхгүй юу?",
+    "hasAccount": "Бүртгэл байна уу?"
+  },
+  "product": {
+    "title": "Бүтээгдэхүүн",
+    "products": "Бүтээгдэхүүнүүд",
+    "category": "Ангилал",
+    "categories": "Ангилалууд",
+    "price": "Үнэ",
+    "description": "Тайлбар",
+    "addToCart": "Сагсанд нэмэх",
+    "addToWishlist": "Хүслийн жагсаалтад нэмэх",
+    "removeFromWishlist": "Хүслийн жагсаалтаас хасах",
+    "outOfStock": "Дууссан",
+    "inStock": "Байгаа",
+    "relatedProducts": "Ижил төстэй бүтээгдэхүүн",
+    "noProducts": "Бүтээгдэхүүн байхгүй байна",
+    "searchPlaceholder": "Бүтээгдэхүүн хайх...",
+    "allCategories": "Бүх ангилал"
+  },
+  "cart": {
+    "title": "Сагс",
+    "empty": "Сагс хоосон байна",
+    "total": "Нийт дүн",
+    "quantity": "Тоо ширхэг",
+    "remove": "Хасах",
+    "clear": "Цэвэрлэх",
+    "checkout": "Худалдан авах",
+    "continueShopping": "Дэлгүүрлэлт үргэлжлүүлэх",
+    "itemCount": "{count} бараа"
+  },
+  "checkout": {
+    "title": "Захиалга оруулах",
+    "deliveryInfo": "Хүргэлтийн мэдээлэл",
+    "firstName": "Нэр",
+    "lastName": "Овог",
+    "email": "И-мэйл",
+    "phone": "Утас",
+    "address": "Хаяг",
+    "description": "Нэмэлт тайлбар",
+    "paymentMethod": "Төлбөрийн арга",
+    "placeOrder": "Захиалга өгөх",
+    "orderSummary": "Захиалгын хураангуй",
+    "subtotal": "Дэд нийлбэр",
+    "deliveryFee": "Хүргэлтийн төлбөр",
+    "total": "Нийт"
+  },
+  "payment": {
+    "title": "Төлбөр",
+    "status": "Төлбөрийн төлөв",
+    "pending": "Хүлээгдэж байна",
+    "paid": "Төлөгдсөн",
+    "failed": "Амжилтгүй",
+    "cancelled": "Цуцлагдсан",
+    "verify": "Төлбөр шалгах",
+    "qrCode": "QR код",
+    "scanQr": "QR кодыг уншуулна уу",
+    "checkStatus": "Төлбөр шалгах",
+    "waitingPayment": "Төлбөр хүлээж байна...",
+    "paymentSuccess": "Төлбөр амжилттай",
+    "paymentFailed": "Төлбөр амжилтгүй",
+    "selectPayment": "Төлбөрийн арга сонгох"
+  },
+  "order": {
+    "title": "Захиалга",
+    "orders": "Захиалгууд",
+    "orderDetail": "Захиалгын дэлгэрэнгүй",
+    "orderId": "Захиалгын дугаар",
+    "status": "Төлөв",
+    "createdAt": "Үүсгэсэн огноо",
+    "totalAmount": "Нийт дүн",
+    "items": "Барааны жагсаалт",
+    "noOrders": "Захиалга байхгүй байна",
+    "cancel": "Захиалга цуцлах",
+    "pending": "Хүлээгдэж байна",
+    "done": "Дууссан",
+    "new": "Шинэ"
+  },
+  "wishlist": {
+    "title": "Хүслийн жагсаалт",
+    "empty": "Хүслийн жагсаалт хоосон байна",
+    "remove": "Хасах"
+  },
+  "profile": {
+    "title": "Профайл",
+    "myOrders": "Миний захиалгууд",
+    "myWishlist": "Хүслийн жагсаалт",
+    "settings": "Тохиргоо",
+    "personalInfo": "Хувийн мэдээлэл",
+    "editProfile": "Профайл засах"
+  },
+  "review": {
+    "title": "Сэтгэгдэл",
+    "add": "Сэтгэгдэл нэмэх",
+    "edit": "Засах",
+    "delete": "Устгах",
+    "rating": "Үнэлгээ",
+    "content": "Сэтгэгдэл",
+    "noReviews": "Одоогоор сэтгэгдэл байхгүй байна",
+    "placeholder": "Сэтгэгдэл бичих...",
+    "loginRequired": "Сэтгэгдэл үлдээхийн тулд нэвтэрнэ үү"
+  },
+  "nav": {
+    "home": "Нүүр",
+    "products": "Бараа",
+    "blog": "Блог",
+    "about": "Бидний тухай",
+    "cart": "Сагс",
+    "wishlist": "Хүслийн жагсаалт",
+    "profile": "Профайл",
+    "orders": "Захиалгууд"
+  },
+  "footer": {
+    "rights": "Бүх эрх хуулиар хамгаалагдсан"
+  },
+  "error": {
+    "notFound": "Хуудас олдсонгүй",
+    "serverError": "Сервер алдаа",
+    "tryAgain": "Дахин оролдох"
+  }
+}
