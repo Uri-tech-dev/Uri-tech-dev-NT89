@@ -10,13 +10,14 @@ import { wishlistItemsAtom } from "@/store/wishlist.store";
 import { formatPrice, isValidUrl } from "@/lib/utils";
 import { Product } from "@/graphql/ecommerce/queries/product";
 import { CP_WISHLIST_ADD } from "@/graphql/ecommerce/mutations/wishlist";
-import { Heart, ShoppingCart } from "lucide-react";
+import { Heart, ShoppingCart, Plus } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
+  showOldPrice?: boolean;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, showOldPrice = false }: ProductCardProps) {
   const [, setCartItems] = useAtom(cartItemsAtom);
   const [currentUser] = useAtom(currentUserAtom);
   const [wishlistItems, setWishlistItems] = useAtom(wishlistItemsAtom);
@@ -75,18 +76,22 @@ export function ProductCard({ product }: ProductCardProps) {
     });
   };
 
+  const oldPrice = showOldPrice && product.unitPrice 
+    ? Math.round(product.unitPrice * 1.3) 
+    : null;
+
   return (
     <div className="group rounded-xl border bg-card overflow-hidden">
       <div className="relative">
         <Link href={`/products/${product._id}`} className="block">
-          <div className="aspect-square bg-muted flex items-center justify-center">
+          <div className="aspect-square bg-muted flex items-center justify-center relative">
             {product.attachment?.url && isValidUrl(product.attachment.url) ? (
               <Image
                 src={product.attachment.url}
                 alt={product.name || ""}
-                width={400}
-                height={400}
-                className="h-full w-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             ) : (
               <span className="text-4xl">📦</span>
@@ -95,28 +100,36 @@ export function ProductCard({ product }: ProductCardProps) {
         </Link>
         <button
           onClick={toggleWishlist}
-          className="absolute top-3 right-3 p-2 rounded-full bg-background/80 hover:bg-background transition-colors"
+          className="absolute top-2 right-2 p-1.5 rounded-full bg-background/80 hover:bg-background transition-colors"
           aria-label={isWishlisted ? "Remove" : "Save"}
         >
           <Heart
-            className={`h-5 w-5 ${
+            className={`h-4 w-4 ${
               isWishlisted ? "fill-red-500 text-red-500" : "text-muted-foreground"
             }`}
           />
         </button>
       </div>
-      <div className="p-4">
+      <div className="p-3">
         <Link href={`/products/${product._id}`}>
-          <h3 className="font-medium text-foreground truncate">{product.name || "Бараа"}</h3>
+          <h3 className="font-medium text-sm text-foreground line-clamp-2 h-10">{product.name || "Бараа"}</h3>
         </Link>
-        <p className="mt-1 text-lg font-bold text-primary">
-          {formatPrice(product.unitPrice || 0)}
-        </p>
+        <p className="text-xs text-muted-foreground mt-1">{product.category?.name || "Бараа"}</p>
+        <div className="flex items-center gap-2 mt-2">
+          <p className="text-lg font-bold text-primary">
+            {formatPrice(product.unitPrice || 0)}
+          </p>
+          {oldPrice && (
+            <p className="text-sm text-muted-foreground line-through">
+              {formatPrice(oldPrice)}
+            </p>
+          )}
+        </div>
         <button
           onClick={addToCart}
-          className="mt-3 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+          className="mt-2 w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
         >
-          <ShoppingCart className="h-4 w-4" />
+          <Plus className="h-4 w-4" />
           Сагсанд нэмэх
         </button>
       </div>

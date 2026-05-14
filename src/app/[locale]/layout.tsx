@@ -6,6 +6,7 @@ import ApolloClientProvider from "@/lib/apollo/provider";
 import { AuthProvider } from "@/lib/auth/AuthContext";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BottomNav from "@/components/layout/BottomNav";
 import "../globals.css";
 
 const inter = Inter({
@@ -41,6 +42,7 @@ export default async function LocaleLayout({
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />
+              <BottomNav />
             </AuthProvider>
           </ApolloClientProvider>
         </NextIntlClientProvider>

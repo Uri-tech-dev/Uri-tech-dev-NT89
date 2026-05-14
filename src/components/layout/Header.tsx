@@ -4,111 +4,53 @@ import { useState } from "react";
 import { Link } from "@/i18n/routing";
 import { useAuth } from "@/lib/auth/AuthContext";
 import { useTranslations } from "next-intl";
-import { ShoppingCart, Menu, X, User, Heart } from "lucide-react";
+import { ShoppingCart, Search, Wheat, MapPin } from "lucide-react";
 
 export default function Header() {
   const t = useTranslations("nav");
-  const { user, logout } = useAuth();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { user } = useAuth();
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-50 w-full bg-background border-b">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 items-center gap-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🌾</span>
-            <span className="text-xl font-bold text-primary">НАРАНТУУЛ</span>
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+            <Wheat className="h-6 w-6 text-primary" />
+            <span className="text-lg font-extrabold text-primary">NT89</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("home")}
-            </Link>
-            <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("products")}
-            </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("about")}
-            </Link>
-          </nav>
+          {/* Search Bar */}
+          <div className="flex-1 max-w-[200px]">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Бараа хайх..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 bg-muted rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+          </div>
 
-          {/* Right Actions */}
-          <div className="flex items-center gap-4">
-            <Link href="/wishlist" className="hidden md:block">
-              <Heart className="h-5 w-5" />
-            </Link>
-            <Link href="/cart" className="relative">
-              <ShoppingCart className="h-5 w-5" />
-            </Link>
-            {user ? (
-              <div className="hidden md:flex items-center gap-3">
-                <Link href="/profile">
-                  <User className="h-5 w-5" />
-                </Link>
-                <button
-                  onClick={logout}
-                  className="text-sm text-muted-foreground hover:text-foreground"
-                >
-                  {t("logout")}
-                </button>
-              </div>
-            ) : (
-              <Link
-                href="/login"
-                className="hidden md:inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
-              >
-                {t("login")}
-              </Link>
-            )}
+          <div className="flex items-center gap-2">
+            {/* Free Delivery Badge */}
+            <span className="hidden sm:inline text-xs text-success font-medium">
+              Хүргэлт үнэгүй
+            </span>
 
-            {/* Mobile menu button */}
-            <button
-              className="md:hidden p-2"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            {/* Cart Button */}
+            <Link
+              href="/cart"
+              className="flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-4 py-2 hover:bg-primary/90 transition-colors"
             >
-              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+              <ShoppingCart className="h-4 w-4" />
+              <span className="text-sm font-medium">0</span>
+            </Link>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t py-4">
-            <nav className="flex flex-col gap-4">
-              <Link href="/" className="text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                {t("home")}
-              </Link>
-              <Link href="/products" className="text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                {t("products")}
-              </Link>
-              <Link href="/about" className="text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                {t("about")}
-              </Link>
-              <Link href="/wishlist" className="text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                {t("wishlist")}
-              </Link>
-              <Link href="/orders" className="text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                {t("orders")}
-              </Link>
-              {user ? (
-                <>
-                  <Link href="/profile" className="text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                    {t("profile")}
-                  </Link>
-                  <button onClick={() => { logout(); setMobileMenuOpen(false); }} className="text-sm text-left">
-                    {t("logout")}
-                  </button>
-                </>
-              ) : (
-                <Link href="/login" className="text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                  {t("login")}
-                </Link>
-              )}
-            </nav>
-          </div>
-        )}
       </div>
     </header>
   );
