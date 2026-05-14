@@ -135,7 +135,7 @@
                   "id": "jCbA5",
                   "name": "logoText",
                   "fill": "#B8860B",
-                  "content": "НАРАНТУУЛ",
+                  "content": "NT89",
                   "fontFamily": "Inter",
                   "fontSize": 18,
                   "fontWeight": "800"
@@ -836,7 +836,7 @@
                   "id": "gSU85",
                   "name": "prodCard1Price",
                   "fill": "#B8860B",
-                  "content": "₮45,000",
+                  "content": "₮75,000",
                   "fontFamily": "Inter",
                   "fontSize": 18,
                   "fontWeight": "800"
@@ -846,7 +846,7 @@
                   "id": "n0w76j",
                   "name": "prodCard1Name",
                   "fill": "#111827",
-                  "content": "Гурил №1 - 25кг",
+                  "content": "Алтан тариа 1р гурил 25кг",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500"
@@ -856,7 +856,7 @@
                   "id": "Ot0ud",
                   "name": "prodCard1Supplier",
                   "fill": "#6B7280",
-                  "content": "Нарантуул Трейд",
+                  "content": "Алтан тариа",
                   "fontFamily": "Inter",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -955,7 +955,7 @@
                   "id": "qAKJZ",
                   "name": "prodCard2Price",
                   "fill": "#B8860B",
-                  "content": "₮32,000",
+                  "content": "₮52,800",
                   "fontFamily": "Inter",
                   "fontSize": 18,
                   "fontWeight": "800"
@@ -965,7 +965,7 @@
                   "id": "aAKh3",
                   "name": "prodCard2Name",
                   "fill": "#111827",
-                  "content": "Цагаан будаа - 10кг",
+                  "content": "Sunsea цагаан будаа 5кг",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500"
@@ -975,7 +975,7 @@
                   "id": "qGjDX",
                   "name": "prodCard2Supplier",
                   "fill": "#6B7280",
-                  "content": "Монгол Будаа",
+                  "content": "Барс зах",
                   "fontFamily": "Inter",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -1120,7 +1120,7 @@
                   "id": "uhifh",
                   "name": "prodCard3Price",
                   "fill": "#B8860B",
-                  "content": "₮28,000",
+                  "content": "₮31,700",
                   "fontFamily": "Inter",
                   "fontSize": 18,
                   "fontWeight": "800"
@@ -1130,7 +1130,7 @@
                   "id": "j1neX",
                   "name": "prodCard3Name",
                   "fill": "#111827",
-                  "content": "Сахар - 50кг",
+                  "content": "Солонгос бор сахар 3кг",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500"
@@ -1140,7 +1140,7 @@
                   "id": "C7vfc3",
                   "name": "prodCard3Supplier",
                   "fill": "#6B7280",
-                  "content": "Монгол Сахар",
+                  "content": "Солонгос импорт",
                   "fontFamily": "Inter",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -1239,7 +1239,7 @@
                   "id": "y0OTUf",
                   "name": "prodCard4Price",
                   "fill": "#B8860B",
-                  "content": "₮18,000",
+                  "content": "₮37,000",
                   "fontFamily": "Inter",
                   "fontSize": 18,
                   "fontWeight": "800"
@@ -1249,7 +1249,7 @@
                   "id": "XVUig",
                   "name": "prodCard4Name",
                   "fill": "#111827",
-                  "content": "Гоймон - 20кг",
+                  "content": "Лапша гоймон 3кг",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500"
@@ -1259,7 +1259,7 @@
                   "id": "T8EAof",
                   "name": "prodCard4Supplier",
                   "fill": "#6B7280",
-                  "content": "Импорт",
+                  "content": "Лапша",
                   "fontFamily": "Inter",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -1432,7 +1432,7 @@
                   "id": "XWVa5",
                   "name": "prodGrid1Name",
                   "fill": "#111827",
-                  "content": "Гурил 25кг",
+                  "content": "Алтан тариа 1р гурил 25кг",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "600"
@@ -1442,7 +1442,7 @@
                   "id": "VuLAQ",
                   "name": "prodGrid1Price",
                   "fill": "#B8860B",
-                  "content": "₮45,000",
+                  "content": "₮75,000",
                   "fontFamily": "Inter",
                   "fontSize": 16,
                   "fontWeight": "700"
@@ -1498,7 +1498,7 @@
                   "id": "XImUj",
                   "name": "prodGrid2Price",
                   "fill": "#B8860B",
-                  "content": "₮32,000",
+                  "content": "₮52,800",
                   "fontFamily": "Inter",
                   "fontSize": 16,
                   "fontWeight": "700"
@@ -1738,7 +1738,7 @@
                   "id": "pvD3z",
                   "name": "detName",
                   "fill": "#111827",
-                  "content": "Гурил №1 - 25кг",
+                  "content": "Алтан тариа 1р гурил 25кг",
                   "fontFamily": "Inter",
                   "fontSize": 24,
                   "fontWeight": "700"
@@ -1901,7 +1901,7 @@
                       "id": "c8VNG",
                       "name": "detPriceCurrent",
                       "fill": "#B8860B",
-                      "content": "₮45,000",
+                      "content": "₮75,000",
                       "fontFamily": "Inter",
                       "fontSize": 28,
                       "fontWeight": "800"
@@ -2450,7 +2450,7 @@
                   "id": "vRHNu",
                   "name": "cartItem1Name",
                   "fill": "#111827",
-                  "content": "Гурил 25кг",
+                  "content": "Алтан тариа 1р гурил 25кг",
                   "fontFamily": "Inter",
                   "fontSize": 16,
                   "fontWeight": "600"
@@ -2460,7 +2460,7 @@
                   "id": "D4Gqn",
                   "name": "cartItem1Price",
                   "fill": "#B8860B",
-                  "content": "₮45,000",
+                  "content": "₮75,000",
                   "fontFamily": "Inter",
                   "fontSize": 16,
                   "fontWeight": "700"
@@ -2504,7 +2504,7 @@
               "id": "FzEM2",
               "name": "cartSubtotalValue",
               "fill": "#111827",
-              "content": "₮45,000",
+              "content": "₮75,000",
               "fontFamily": "Inter",
               "fontSize": 24,
               "fontWeight": "800"
@@ -2729,7 +2729,7 @@
               "id": "PR3GQ",
               "name": "checkoutTotalValue",
               "fill": "#111827",
-              "content": "₮45,000",
+              "content": "₮75,000",
               "fontFamily": "Inter",
               "fontSize": 28,
               "fontWeight": "800"
@@ -3487,7 +3487,7 @@
                   "id": "l2kSUE",
                   "name": "deskLogoText",
                   "fill": "#B8860B",
-                  "content": "НАРАНТУУЛ",
+                  "content": "NT89",
                   "fontFamily": "Inter",
                   "fontSize": 22,
                   "fontWeight": "800"
@@ -4258,7 +4258,7 @@
                   "id": "GzATn",
                   "name": "deskProd1Price",
                   "fill": "#B8860B",
-                  "content": "₮45,000",
+                  "content": "₮75,000",
                   "fontFamily": "Inter",
                   "fontSize": 20,
                   "fontWeight": "800"
@@ -4268,7 +4268,7 @@
                   "id": "D8Hc9i",
                   "name": "deskProd1Name",
                   "fill": "#111827",
-                  "content": "Гурил №1 - 25кг",
+                  "content": "Алтан тариа 1р гурил 25кг",
                   "fontFamily": "Inter",
                   "fontSize": 15,
                   "fontWeight": "500"
@@ -4278,7 +4278,7 @@
                   "id": "aJsih",
                   "name": "deskProd1Supplier",
                   "fill": "#6B7280",
-                  "content": "Нарантуул Трейд",
+                  "content": "Алтан тариа",
                   "fontFamily": "Inter",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -4377,7 +4377,7 @@
                   "id": "C9K47l",
                   "name": "deskProd2Price",
                   "fill": "#B8860B",
-                  "content": "₮32,000",
+                  "content": "₮52,800",
                   "fontFamily": "Inter",
                   "fontSize": 20,
                   "fontWeight": "800"
@@ -4387,7 +4387,7 @@
                   "id": "a8kQLZ",
                   "name": "deskProd2Name",
                   "fill": "#111827",
-                  "content": "Цагаан будаа - 10кг",
+                  "content": "Sunsea цагаан будаа 5кг",
                   "fontFamily": "Inter",
                   "fontSize": 15,
                   "fontWeight": "500"
@@ -4397,7 +4397,7 @@
                   "id": "s61dW",
                   "name": "deskProd2Supplier",
                   "fill": "#6B7280",
-                  "content": "Монгол Будаа",
+                  "content": "Барс зах",
                   "fontFamily": "Inter",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -4496,7 +4496,7 @@
                   "id": "hljQM",
                   "name": "deskProd3Price",
                   "fill": "#B8860B",
-                  "content": "₮28,000",
+                  "content": "₮31,700",
                   "fontFamily": "Inter",
                   "fontSize": 20,
                   "fontWeight": "800"
@@ -4506,7 +4506,7 @@
                   "id": "k8aN0",
                   "name": "deskProd3Name",
                   "fill": "#111827",
-                  "content": "Сахар - 50кг",
+                  "content": "Солонгос бор сахар 3кг",
                   "fontFamily": "Inter",
                   "fontSize": 15,
                   "fontWeight": "500"
@@ -4516,7 +4516,7 @@
                   "id": "Jf2MX",
                   "name": "deskProd3Supplier",
                   "fill": "#6B7280",
-                  "content": "Монгол Сахар",
+                  "content": "Солонгос импорт",
                   "fontFamily": "Inter",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -4615,7 +4615,7 @@
                   "id": "P7XIIe",
                   "name": "deskProd4Price",
                   "fill": "#B8860B",
-                  "content": "₮18,000",
+                  "content": "₮37,000",
                   "fontFamily": "Inter",
                   "fontSize": 20,
                   "fontWeight": "800"
@@ -4625,7 +4625,7 @@
                   "id": "lSBJr",
                   "name": "deskProd4Name",
                   "fill": "#111827",
-                  "content": "Гоймон - 20кг",
+                  "content": "Лапша гоймон 3кг",
                   "fontFamily": "Inter",
                   "fontSize": 15,
                   "fontWeight": "500"
@@ -4635,7 +4635,7 @@
                   "id": "zz34D",
                   "name": "deskProd4Supplier",
                   "fill": "#6B7280",
-                  "content": "Импорт",
+                  "content": "Лапша",
                   "fontFamily": "Inter",
                   "fontSize": 13,
                   "fontWeight": "normal"
