@@ -25,7 +25,7 @@ export default function BottomNav() {
           return (
             <Link
               key={tab.href}
-              href={`/${locale}${tab.href}`}
+              href={tab.href}
               className={`flex flex-col items-center gap-1 py-2 px-3 ${
                 isActive ? "text-primary" : "text-muted-foreground"
               }`}
