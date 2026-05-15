@@ -1,30 +1,41 @@
 "use client";
 
-import { useState } from "react";
-import { useProducts, useProductCategories } from "@/hooks/queries";
-import { ProductCard } from "@/components/product/ProductCard";
+import { useState, useMemo } from "react";
+import { products, categories, searchProducts } from "@/data/products";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
+import { Search, SlidersHorizontal } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductsPage() {
   const [searchValue, setSearchValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
-    undefined
-  );
-  const [page, setPage] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState<
+    string | undefined
+  >(undefined);
 
-  const { products, loading } = useProducts({
-    categoryId: selectedCategory,
-    page,
-    perPage: 20,
-    searchValue: searchValue || undefined,
-  });
-  const { categories } = useProductCategories();
+  const filteredProducts = useMemo(() => {
+    let result = products;
+
+    if (selectedCategory) {
+      result = result.filter((p) => p.category === selectedCategory);
+    }
+
+    if (searchValue) {
+      result = searchProducts(searchValue);
+    }
+
+    return result;
+  }, [selectedCategory, searchValue]);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Бараанууд</h1>
+    <div className="container mx-auto px-4 py-6 pb-24">
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-2xl font-bold">Бараанууд</h1>
+        <Button variant="outline" size="icon">
+          <SlidersHorizontal className="h-4 w-4" />
+        </Button>
+      </div>
 
       {/* Search */}
       <div className="relative mb-6">
@@ -38,67 +49,89 @@ export default function ProductsPage() {
       </div>
 
       {/* Category filter */}
-      <div className="flex gap-2 overflow-x-auto pb-4 mb-6">
+      <div className="flex gap-2 overflow-x-auto pb-4 mb-6 -mx-4 px-4 scrollbar-hide">
         <Button
           variant={!selectedCategory ? "default" : "outline"}
           size="sm"
           onClick={() => setSelectedCategory(undefined)}
+          className="flex-shrink-0"
         >
           Бүгд
         </Button>
-        {categories.map((cat: { _id: string; name?: string }) => (
+        {categories.map((cat) => (
           <Button
-            key={cat._id}
-            variant={selectedCategory === cat._id ? "default" : "outline"}
+            key={cat.id}
+            variant={selectedCategory === cat.id ? "default" : "outline"}
             size="sm"
-            onClick={() => setSelectedCategory(cat._id)}
+            onClick={() => setSelectedCategory(cat.id)}
+            className="flex-shrink-0"
           >
             {cat.name}
           </Button>
         ))}
       </div>
 
-      {/* Product grid */}
-      {loading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div
-              key={i}
-              className="rounded-xl border bg-card p-4 animate-pulse"
-            >
-              <div className="aspect-square bg-muted rounded-lg mb-4" />
-              <div className="h-4 bg-muted rounded w-3/4 mb-2" />
-              <div className="h-4 bg-muted rounded w-1/2" />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product: any) => (
-              <ProductCard key={product._id} product={product} />
-            ))}
-          </div>
+      {/* Results count */}
+      <p className="text-sm text-muted-foreground mb-4">
+        {filteredProducts.length} бараа олдлоо
+      </p>
 
-          {/* Pagination */}
-          <div className="mt-8 flex justify-center gap-2">
-            <Button
-              variant="outline"
-              onClick={() => setPage((p) => Math.max(1, p - 1))}
-              disabled={page <= 1}
-            >
-              Өмнөх
-            </Button>
-            <span className="flex items-center px-4">{page} хуудас</span>
-            <Button
-              variant="outline"
-              onClick={() => setPage((p) => p + 1)}
-              disabled={products.length < 20}
-            >
-              Дараах
-            </Button>
-          </div>
-        </>
+      {/* Product grid */}
+      <div className="grid grid-cols-2 gap-4">
+        {filteredProducts.map((product) => (
+          <Link
+            key={product.id}
+            href={`/products/${product.id}`}
+            className="group rounded-xl border bg-card overflow-hidden"
+          >
+            <div className="relative">
+              <div className="aspect-square bg-muted flex items-center justify-center relative">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+              {product.badge && (
+                <span
+                  className={`absolute top-2 left-2 px-2 py-1 rounded-full text-xs font-medium ${
+                    product.badge === "Хямдралтай"
+                      ? "bg-red-500 text-white"
+                      : product.badge === "Онцлох"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-green-500 text-white"
+                  }`}
+                >
+                  {product.badge}
+                </span>
+              )}
+            </div>
+            <div className="p-3">
+              <h3 className="font-medium text-sm text-foreground line-clamp-2 h-10">
+                {product.name}
+              </h3>
+              <p className="text-xs text-muted-foreground mt-1">{product.brand}</p>
+              <div className="flex items-center gap-2 mt-2">
+                <p className="text-lg font-bold text-primary">
+                  ₮{product.price.toLocaleString()}
+                </p>
+                {product.oldPrice && (
+                  <p className="text-sm text-muted-foreground line-through">
+                    ₮{product.oldPrice.toLocaleString()}
+                  </p>
+                )}
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {filteredProducts.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-muted-foreground">Бараа олдсонгүй</p>
+        </div>
       )}
     </div>
   );
