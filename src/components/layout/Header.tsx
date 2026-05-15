@@ -2,14 +2,13 @@
 
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
-import { useAuth } from "@/lib/auth/AuthContext";
-import { useTranslations } from "next-intl";
-import { ShoppingCart, Search, Wheat, MapPin } from "lucide-react";
+import { useAtom } from "jotai";
+import { cartCountAtom } from "@/store/cart.store";
+import { ShoppingCart, Search, Wheat } from "lucide-react";
 
 export default function Header() {
-  const t = useTranslations("nav");
-  const { user } = useAuth();
   const [searchQuery, setSearchQuery] = useState("");
+  const [cartCount] = useAtom(cartCountAtom);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background border-b">
@@ -44,10 +43,17 @@ export default function Header() {
             {/* Cart Button */}
             <Link
               href="/cart"
-              className="flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-4 py-2 hover:bg-primary/90 transition-colors"
+              className="relative flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-4 py-2 hover:bg-primary/90 transition-colors"
             >
               <ShoppingCart className="h-4 w-4" />
-              <span className="text-sm font-medium">0</span>
+              <span className="text-sm font-medium">
+                {cartCount > 0 ? cartCount : 0}
+              </span>
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 h-5 w-5 bg-red-500 rounded-full flex items-center justify-center text-xs">
+                  {cartCount}
+                </span>
+              )}
             </Link>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { useRouter } from "@/i18n/routing";
 import { cartItemsAtom, cartTotalAtom } from "@/store/cart.store";
 import { currentUserAtom } from "@/store/auth.store";
 import { Button } from "@/components/ui/button";
-import { formatPrice, isValidUrl } from "@/lib/utils";
+import { formatPrice } from "@/lib/utils";
 import { Minus, Plus, Trash2, ShoppingBag } from "lucide-react";
 
 export default function CartPage() {
@@ -15,17 +15,23 @@ export default function CartPage() {
   const [currentUser] = useAtom(currentUserAtom);
   const router = useRouter();
 
-  const removeItem = (productId: string) =>
-    setItems((prev) => prev.filter((item) => item.productId !== productId));
+  const removeItem = (productId: string, variantId: string) =>
+    setItems((prev) =>
+      prev.filter(
+        (item) => !(item.productId === productId && item.variantId === variantId)
+      )
+    );
 
-  const updateQuantity = (productId: string, count: number) => {
+  const updateQuantity = (productId: string, variantId: string, count: number) => {
     if (count <= 0) {
-      removeItem(productId);
+      removeItem(productId, variantId);
       return;
     }
     setItems((prev) =>
       prev.map((item) =>
-        item.productId === productId ? { ...item, count } : item
+        item.productId === productId && item.variantId === variantId
+          ? { ...item, count }
+          : item
       )
     );
   };
@@ -41,7 +47,7 @@ export default function CartPage() {
 
   if (items.length === 0)
     return (
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 pb-24">
         <div className="text-center">
           <ShoppingBag className="h-16 w-16 mx-auto text-muted-foreground mb-4" />
           <h1 className="text-2xl font-bold mb-2">Сагс</h1>
@@ -54,18 +60,18 @@ export default function CartPage() {
     );
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Сагс</h1>
+    <div className="container mx-auto px-4 py-8 pb-24">
+      <h1 className="text-2xl font-bold mb-6">Сагс ({items.length} бараа)</h1>
 
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-4">
           {items.map((item) => (
             <div
-              key={item.productId}
+              key={`${item.productId}-${item.variantId}`}
               className="flex gap-4 rounded-xl border p-4"
             >
               <div className="h-24 w-24 rounded-lg bg-muted overflow-hidden shrink-0">
-                {item.productImgUrl && isValidUrl(item.productImgUrl) ? (
+                {item.productImgUrl ? (
                   <Image
                     src={item.productImgUrl}
                     alt={item.productName || ""}
@@ -82,6 +88,7 @@ export default function CartPage() {
 
               <div className="flex-1">
                 <p className="font-medium">{item.productName}</p>
+                <p className="text-sm text-muted-foreground">{item.variantName}</p>
                 <p className="text-primary font-semibold">
                   {formatPrice(item.unitPrice)}
                 </p>
@@ -89,7 +96,7 @@ export default function CartPage() {
                 <div className="flex items-center gap-2 mt-3">
                   <button
                     onClick={() =>
-                      updateQuantity(item.productId, item.count - 1)
+                      updateQuantity(item.productId, item.variantId, item.count - 1)
                     }
                     className="h-8 w-8 rounded-lg border flex items-center justify-center hover:bg-muted"
                   >
@@ -98,7 +105,7 @@ export default function CartPage() {
                   <span className="w-8 text-center">{item.count}</span>
                   <button
                     onClick={() =>
-                      updateQuantity(item.productId, item.count + 1)
+                      updateQuantity(item.productId, item.variantId, item.count + 1)
                     }
                     className="h-8 w-8 rounded-lg border flex items-center justify-center hover:bg-muted"
                   >
@@ -106,7 +113,7 @@ export default function CartPage() {
                   </button>
 
                   <button
-                    onClick={() => removeItem(item.productId)}
+                    onClick={() => removeItem(item.productId, item.variantId)}
                     className="ml-auto text-destructive hover:text-destructive/80"
                   >
                     <Trash2 className="h-4 w-4" />
@@ -123,7 +130,9 @@ export default function CartPage() {
 
             <div className="mt-4 space-y-2">
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Бараа ({items.length})</span>
+                <span className="text-muted-foreground">
+                  Бараа ({items.reduce((sum, item) => sum + item.count, 0)} ширхэг)
+                </span>
                 <span>{formatPrice(total)}</span>
               </div>
               <div className="flex justify-between text-sm">

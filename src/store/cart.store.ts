@@ -1,7 +1,17 @@
 import { atom } from "jotai";
-import { ICartItem } from "@/types/order.types";
 
-export const cartItemsAtom = atom<ICartItem[]>([]);
+export interface CartItem {
+  productId: string;
+  variantId: string;
+  productName: string;
+  variantName: string;
+  unitPrice: number;
+  count: number;
+  productImgUrl?: string;
+  weight?: number;
+}
+
+export const cartItemsAtom = atom<CartItem[]>([]);
 
 export const cartTotalAtom = atom((get) => {
   const items = get(cartItemsAtom);

@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { getProductById } from "@/data/products";
 import { Button } from "@/components/ui/button";
+import { cartItemsAtom } from "@/store/cart.store";
+import { useAtom } from "jotai";
 import {
   Heart,
   Minus,
@@ -24,6 +26,8 @@ export default function ProductDetailPage({
   const [productId, setProductId] = useState<string>("");
   const [selectedVariant, setSelectedVariant] = useState<string>("");
   const [quantity, setQuantity] = useState(1);
+  const [added, setAdded] = useState(false);
+  const [, setCartItems] = useAtom(cartItemsAtom);
 
   // Get product ID from params
   React.useEffect(() => {
@@ -38,6 +42,41 @@ export default function ProductDetailPage({
 
   const product = getProductById(productId);
   const variant = product?.variants.find((v) => v.id === selectedVariant);
+
+  const addToCart = () => {
+    if (!product || !variant) return;
+
+    setCartItems((prev) => {
+      const existing = prev.find(
+        (item) => item.productId === product.id && item.variantId === variant.id
+      );
+
+      if (existing) {
+        return prev.map((item) =>
+          item.productId === product.id && item.variantId === variant.id
+            ? { ...item, count: item.count + quantity }
+            : item
+        );
+      }
+
+      return [
+        ...prev,
+        {
+          productId: product.id,
+          variantId: variant.id,
+          productName: product.name,
+          variantName: variant.name,
+          unitPrice: variant.price,
+          count: quantity,
+          productImgUrl: product.image,
+          weight: variant.weight,
+        },
+      ];
+    });
+
+    setAdded(true);
+    setTimeout(() => setAdded(false), 1500);
+  };
 
   if (!product) {
     return (
@@ -224,9 +263,25 @@ export default function ProductDetailPage({
             <p className="text-sm text-muted-foreground">Нийт дүн</p>
             <p className="text-xl font-bold">₮{totalPrice.toLocaleString()}</p>
           </div>
-          <Button className="flex-1 h-12 text-base">
-            <ShoppingCart className="h-5 w-5 mr-2" />
-            Сагсанд нэмэх
+          <Button 
+            onClick={addToCart}
+            className={`flex-1 h-12 text-base transition-colors ${
+              added 
+                ? "bg-green-500 hover:bg-green-600" 
+                : ""
+            }`}
+          >
+            {added ? (
+              <>
+                <Check className="h-5 w-5 mr-2" />
+                Нэмэгдлээ
+              </>
+            ) : (
+              <>
+                <ShoppingCart className="h-5 w-5 mr-2" />
+                Сагсанд нэмэх
+              </>
+            )}
           </Button>
         </div>
       </div>
